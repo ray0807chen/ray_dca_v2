@@ -1,6 +1,7 @@
 import json
 import time
 import yfinance as yf
+import os
 
 def fetch_market_data(symbol):
     """抓取 yfinance 的基本面資料"""
@@ -71,10 +72,12 @@ def main():
         print(f"找不到 {target_file}。")
         return
 
-    total_symbols = len(companies)
+    # 過濾出真正的股票代碼（排除 _metadata）
+    symbols_to_process = [(s, i) for s, i in companies.items() if s != "_metadata"]
+    total_symbols = len(symbols_to_process)
     print(f"開始更新 {total_symbols} 檔標的之市場資料 (使用 yfinance)...")
 
-    for index, (symbol, info) in enumerate(companies.items(), 1):
+    for index, (symbol, info) in enumerate(symbols_to_process, 1):
         print(f"[{index}/{total_symbols}] 正在處理: {symbol}...")
         
         # 抓取 API 資料
@@ -84,13 +87,6 @@ def main():
         # 稍微停頓
         time.sleep(0.3)
     # 新增更新時間標記 (抓取當下的美東或本地時間皆可，這裡以 YYYY-MM-DD 表示)
-    from datetime import datetime, timezone, timedelta
-    # 設定一個時間，可抓台灣時間或簡單抓 UTC 等，這裡示範抓台灣時間 (UTC+8) 作為註記
-    tw_time = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
-    companies["_metadata"] = {
-        "last_updated": tw_time
-    }
-
     # 將結果寫回
     with open(target_file, "w", encoding="utf-8") as f:
         json.dump(companies, f, ensure_ascii=False, indent=4)

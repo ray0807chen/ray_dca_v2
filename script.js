@@ -82,11 +82,23 @@ async function loadCompaniesData() {
     const res = await fetch('companies.json');
     companiesData = await res.json();
     
-    if (companiesData._metadata && companiesData._metadata.last_updated) {
+    // ── Fetch dynamic update date from AAPL.json (SSOT) ──
+    try {
+      const aaplRes = await fetch('stock_data/AAPL.json');
+      const aaplData = await aaplRes.json();
+      
+      // 直接抓取 prices 物件中最後一個 Key 作為日期 (更精確)
+      const dates = Object.keys(aaplData.prices).sort();
+      const updateDate = dates.length > 0 ? dates[dates.length - 1] : aaplData.date_range.end;
+      
       const noteEl = document.getElementById('dataUpdateNote');
       if (noteEl) {
-        noteEl.innerHTML = `⭐ 數據更新日期：<strong>${companiesData._metadata.last_updated}</strong> (收盤價)`;
+        noteEl.innerHTML = `⭐ 數據更新日期：<strong>${updateDate}</strong> (收盤價)`;
       }
+      // Store globally for other panels
+      window.lastUpdateDate = updateDate;
+    } catch (e) {
+      console.warn("無法取得更新日期", e);
     }
   } catch (e) {
     showToast('error', '資料載入失敗', '無法取得公司列表，請重新整理');
@@ -287,7 +299,7 @@ async function selectStock(symbol) {
       const isBuy = md.rating_recommendation && String(md.rating_recommendation).includes('Buy');
       const isSell = md.rating_recommendation && String(md.rating_recommendation).includes('Sell');
       
-      const updateDate = (companiesData._metadata && companiesData._metadata.last_updated) ? companiesData._metadata.last_updated : '';
+      const updateDate = window.lastUpdateDate || '';
       const updateDateHtml = updateDate ? `<span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal; margin-left: 8px;">(數據更新日期：${updateDate} 收盤價)</span>` : '';
 
       

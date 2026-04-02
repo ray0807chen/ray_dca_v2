@@ -334,7 +334,7 @@
         ],
         "market_data": {
             "price": 144.09,
-            "mktCap": 337240522752,
+            "mktCap": 336699916288,
             "pe": 21.378338,
             "rating": "A",
             "rating_score": 4,
@@ -1838,8 +1838,5 @@
             "rating_score": "-",
             "rating_recommendation": "N/A"
         }
-    },
-    "_metadata": {
-        "last_updated": "2026-04-02"
     }
 }

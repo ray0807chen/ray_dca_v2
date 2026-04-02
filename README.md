@@ -19,7 +19,7 @@
 
 ### 3. 架構與數據層強健化 (Backend & Architecture)
 * **全新爬蟲引擎 `fetch_market_data.py`**：採用更穩定的 `yfinance` 模組，徹底解決了舊版 FMP API 次數限制的問題。
-* **單一資料來源 (SSOT)**：所有標的統一在 `companies.json` 管理，新增至 57 檔涵蓋市場絕對主流的熱門標的與 ETF，並包含 `_metadata` 動態記錄資料爬取的絕對時間。
+* **單一資料來源 (SSOT)**：所有標的統一在 `companies.json` 管理，新增至 57 檔涵蓋市場絕對主流的熱門標的與 ETF，前端自動從 `stock_data/AAPL.json` 提取最新收盤日期，確保數據版本一致。
 
 ---
 
