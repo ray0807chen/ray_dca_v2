@@ -1,6 +1,6 @@
 # RAY DCA v2.0 — 美股定期定額回測系統
 
-**網頁連結：** [https://ray0807chen.github.io/ray_dca/](https://ray0807chen.github.io/ray_dca_v2/) 或 [https://raytaiwan.qzz.io/](https://raytaiwan.qzz.io/)
+**網頁連結：** [https://ray0807chen.github.io/ray_dca_v2/](https://ray0807chen.github.io/ray_dca_v2/) 或 [https://raytaiwan.qzz.io/](https://raytaiwan.qzz.io/)
 
 這是一個強大且視覺精美的美股投資回測與數據分析網站。由 RAY 所開發，專為分析定期定額（DCA）與單筆投入（All-in）策略的歷史真實績效而設計。經過 v2.0 等級的全面升級，本專案現已具備專業級的數據深度與頂級的 UI/UX 沉浸式體驗。
 
@@ -8,7 +8,7 @@
 
 ## 🚀 v2.0 重大更新亮點 (Major Updates)
 
-### 1.UI/UX 視覺重構 (Premium Design)
+### 1. UI/UX 視覺重構 (Premium Design)
 * **暗黑玻璃擬態 (Dark Glassmorphism)**：引進高質感的深藍與曜石黑背景，搭配金色漸層、毛玻璃特效與細膩的高階陰影。
 * **微動畫加持 (Micro-interactions)**：全面導入 GSAP 滑動視差與入場動畫，並為各個互動按鈕（如 CTA 與漢堡選單）實作柔和的點擊水波紋 (Ripple) 與轉換層次。
 
@@ -40,16 +40,59 @@
 
 ---
 
-## 🛠 技術棧 (Tech Stack)
+## 🧠 技術實作藍圖 (Technical Blueprint)
 
-| 領域 | 技術與工具 |
-|------|------|
-| **前端架構** | 純 HTML5 + Vanilla CSS3 + Vanilla JavaScript |
-| **視覺與動畫** | GSAP (ScrollTrigger), 客製化 CSS 變數系統 |
-| **圖表繪製** | Chart.js (折線圖), Highcharts (回測圖), 自磨 CSS Gauge |
-| **資料來源** | Yahoo Finance (Python `yfinance` 庫) |
-| **自動化部署** | GitHub Actions 每日自動執行 Python 腳本更新並推播 |
-| **Hosting** | GitHub Pages (`gh-pages` branch) |
+### 指標化的技術數據
+| 指標 | 數值 / 描述 | 來源 |
+|------|-------------|------|
+| 支援標的 | 57 檔大型權值股 + ETF，含產業、描述、Icon | `companies.json`
+| 歷史資料粒度 | 日收盤價，自 IPO 起完整紀錄 | `stock_data/*.json`
+| 市場資料欄位 | 價格、市值、本益比、華爾街評級 | `fetch_market_data.py`
+| 前端互動模組 | Toast、Skeleton、Ripple、Chart.js、Highcharts、GSAP | `script.js`
+| 自動化更新頻率 | GitHub Actions 每日排程更新 | `.github/workflows/daily-update.yml`
+
+### 前端體驗層
+- `script.js` 以 **全域狀態 + 模組化函式** 管理股票卡片、搜尋、PK 表單與動畫狀態，並搭配 IntersectionObserver 實現卡片漸進載入。
+- Toast、進度條、Skeleton 與 CountUp 動畫取代原生 alert，提升錯誤回饋、資料載入與成果揭示的體驗品質。
+- Chart.js / Highcharts + 自定義 CSS Gauge 形成多圖層視覺；同時透過 CSS 變數系統維持暗黑模式的一致光影語彙。
+
+### 數據層與自動化流程
+- `update_data.py` 會自動偵測 `stock_data/<symbol>.json` 是否存在，首次執行抓取 `period="max"` 的完整歷史，之後僅下載增量天數，並記錄 `date_range`、`total_records`、`last_updated` 等欄位作為驗證用佐證資料。
+- `fetch_market_data.py` 針對 `companies.json` 中的每個標的補齊市值、PE 與分析師評級，並將結果寫回原檔成為真正的 **Single Source of Truth**。
+- GitHub Actions (`daily-update.yml`) 每日喚醒 Runner→執行兩支 Python 腳本→Commit 回主線→將 `gh-pages` 靜態站點更新，確保頁面永遠顯示最新資料。
+
+### 可維護性與可靠性
+- 以 JSON 為前後端共享格式：前端僅需 `fetch` 就能讀取資料，避免在瀏覽器端進行昂貴的計算或狀態同步。
+- 透過 `companies.json` 中 `_metadata` 欄位與 `window.lastUpdateDate` 共通變數標記資料來源日期，使 UI 能顯示可信的更新時間，符合金融數據透明度要求。
+- 批次載入股價變動（每批 5 檔）可降低 API 並發壓力，也能在頁面載入初期優先渲染骨架畫面與搜尋功能，實際測試可在 1 秒內看到互動回饋。
+
+---
+
+## 📈 經濟論點：DCA vs. All-in 的證據基礎
+
+1. **波動度平滑**：定期定額將時間當作分散風險的維度，把一次性投資拆成多期買入，可降低單一時間點誤判（`script.js` 的 DCA 模型逐月用真實收盤價模擬）。
+2. **行為金融學優勢**：DCA 透過自動化紀律（支援 1~28 日扣款與手續費設定）避免情緒交易，有助於克服 FOMO 與恐慌性停損。
+3. **機會成本比較**：PK 模式讓 All-in 與 DCA 同步回測，凸顯「若市場長期上漲，All-in 期望值較高；若波動劇烈甚至趨勢不明，DCA 的下檔風險更小」的經濟直覺。
+4. **估值與總體連結**：資料面同時提供 PE 與市值等估值指標，教授可追問「在高估或低估環境下如何調整策略」，此專案可即時展示標的估值水位。
+5. **現金流配適性**：大多數家庭與上班族具備月度薪資，DCA 更貼近實際世界的資金約束，也就是行為經濟學的「可行集合」。
+6. **資料可信度**：所有價格皆來自 Yahoo Finance 歷史收盤價，頻率為日資料，並以最新收盤日期對外揭露；這是做為研究與面試時的實證基礎。
+
+---
+
+## 🎓 學測面試題庫（經濟系教授視角）
+
+1. **為什麼選擇 DCA 作為主題，而不是其他投資策略？**  
+   參考回答：DCA 兼具行為金融與總體經濟兩個面向，一方面可討論投資者如何藉由制度化扣款降低行為偏誤，一方面也能在歷史資料中比較牛熊週期的產出落差。本專案提供 57 檔股票的真實回測，能具體展示策略的優缺點，而不是停留在理論層次。
+2. **單筆投入在長期上漲市場通常勝出，為何還需要 DCA？**  
+   參考回答：All-in 的期望報酬較高，但同時伴隨較大的落地風險與心理壓力。我將兩種策略都實作在 PK 模式中，教授可以看到在 1、3、5、10、20 年各期間的風險報酬差異，這也凸顯「風險承受度」與「現金流型態」在策略選擇上的重要性。
+3. **如何驗證資料可信度與更新頻率？**  
+   參考回答：所有歷史價由 `update_data.py` 每日抓取 Yahoo Finance，檔案中包含 `last_updated` 與 `date_range`。前端也在頁面顯示最新收盤日期，若教授希望進一步驗證，可直接檢視 `stock_data/*.json` 或查看 GitHub Actions 紀錄。
+4. **面對高估值環境，你會如何調整定期定額策略？**  
+   參考回答：專案提供 PE 與市值資料，若估值顯著偏高，我會延長扣款週期、提高現金部位或改用分批 All-in。這些情境都可以利用系統的手續費、起始日及標的切換做敏感度分析。
+5. **這個系統如何應用在實際理財服務？**  
+   參考回答：可作為顧問向客戶溝通風險的教具。透過骨架畫面、互動圖表與自動更新，使用者可以即時看到不同策略的結果，進而把討論焦點放在資產配置與現金流管理，而不是短線價位。
+6. **如果教授質疑資料只涵蓋美股，是否具代表性？**  
+   參考回答：美股具有全球龍頭企業與 ETF，多數台灣投資者可以透過券商直接參與，具備高度可行性。若未來要拓展到台股或外匯，只需擴充 `companies.json` 與新增資料抓取腳本，整個前端框架已經具備可擴充性。
 
 ---
 
@@ -87,4 +130,4 @@ http://localhost:7788
 ## 📜 授權協議 (License)
 
 本專案採用 **MIT License** 開源。
-歡迎 Fork 進行二次開發，請於顯著位置保留原始作者註記即可。
+
