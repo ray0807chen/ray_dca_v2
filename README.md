@@ -1,6 +1,6 @@
 # RAY DCA v2.0 — 美股定期定額回測系統
 
-**網頁連結：** [https://ray0807chen.github.io/ray_dca/](https://ray0807chen.github.io/ray_dca/) 或 [https://raytaiwan.qzz.io/](https://raytaiwan.qzz.io/)
+**網頁連結：** [https://ray0807chen.github.io/ray_dca/](https://ray0807chen.github.io/ray_dca_v2/) 或 [https://raytaiwan.qzz.io/](https://raytaiwan.qzz.io/)
 
 這是一個強大且視覺精美的美股投資回測與數據分析網站。由 RAY 所開發，專為分析定期定額（DCA）與單筆投入（All-in）策略的歷史真實績效而設計。經過 v2.0 等級的全面升級，本專案現已具備專業級的數據深度與頂級的 UI/UX 沉浸式體驗。
 
