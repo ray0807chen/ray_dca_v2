@@ -310,22 +310,23 @@ h1 {
 /* Feature cards grid — CENTERED TEXT + CENTERED BUTTONS + EQUAL HEIGHT */
 .features-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   max-width: 1200px;
-  margin: 0 auto 0;
+  margin: 1.5rem auto 0;
   padding: 0;
   opacity: 0;
-  /* equal height via stretch */
-  align-items: stretch;
 }
 
 .features-list li {
+  flex: 1 1 320px;
+  max-width: 380px;
   background: var(--c-glass);
   border: 1px solid var(--c-border);
   border-radius: var(--r-lg);
-  padding: 1.4rem 1.5rem;
+  padding: 1.6rem 1.8rem;
   backdrop-filter: var(--blur-glass);
   -webkit-backdrop-filter: var(--blur-glass);
   display: flex;
@@ -1861,7 +1862,7 @@ h1 {
    ══════════════════════════════ */
 @media (max-width: 1024px) {
   .features-list {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
 
   .backtest-top-row {
