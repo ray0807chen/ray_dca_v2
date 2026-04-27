@@ -56,9 +56,9 @@
             "GitHub"
         ],
         "market_data": {
-            "price": 424.62,
-            "mktCap": 3155936149504,
-            "pe": 26.588602,
+            "price": 424.6,
+            "mktCap": 3155787776000,
+            "pe": 26.58735,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -149,9 +149,9 @@
             "Workplace"
         ],
         "market_data": {
-            "price": 675.03,
-            "mktCap": 1713511989248,
-            "pe": 28.736912,
+            "price": 675.05,
+            "mktCap": 1713562583040,
+            "pe": 28.73776,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -180,9 +180,9 @@
             "GeForce NOW"
         ],
         "market_data": {
-            "price": 208.27,
-            "mktCap": 5062002737152,
-            "pe": 42.591003,
+            "price": 208.26,
+            "mktCap": 5061759467520,
+            "pe": 42.58896,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -515,9 +515,9 @@
             "DVD Rental"
         ],
         "market_data": {
-            "price": 92.44,
-            "mktCap": 389246222336,
-            "pe": 29.819357,
+            "price": 92.355,
+            "mktCap": 388888330240,
+            "pe": 29.791937,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -544,9 +544,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 82.54,
-            "mktCap": 414846025728,
-            "pe": 59.38258,
+            "price": 82.57,
+            "mktCap": 414996824064,
+            "pe": 56.40952,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1091,9 +1091,9 @@
             "Software"
         ],
         "market_data": {
-            "price": 213.17,
-            "mktCap": 135075831808,
-            "pe": 33.998405,
+            "price": 213.16,
+            "mktCap": 135069499392,
+            "pe": 33.99681,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1218,9 +1218,9 @@
             "Custom Silicon"
         ],
         "market_data": {
-            "price": 347.81,
-            "mktCap": 567073177600,
-            "pe": 133.26054,
+            "price": 347.8,
+            "mktCap": 567056859136,
+            "pe": 133.2567,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1480,9 +1480,9 @@
             "NVIDIA Corp."
         ],
         "market_data": {
-            "price": 663.88,
-            "mktCap": 260971233280,
-            "pe": 35.07307,
+            "price": 664.02,
+            "mktCap": 261026267136,
+            "pe": 35.080467,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
