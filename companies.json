@@ -25,9 +25,9 @@
             "Apple TV+"
         ],
         "market_data": {
-            "price": 280.14,
-            "mktCap": 4109006274560,
-            "pe": 33.915257,
+            "price": 280.25,
+            "mktCap": 4110619508736,
+            "pe": 33.92857,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -56,9 +56,9 @@
             "GitHub"
         ],
         "market_data": {
-            "price": 414.44,
-            "mktCap": 3078640631808,
-            "pe": 24.69845,
+            "price": 414.195,
+            "mktCap": 3076820566016,
+            "pe": 24.68385,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -118,9 +118,9 @@
             "Amazon Music"
         ],
         "market_data": {
-            "price": 268.26,
-            "mktCap": 2884935614464,
-            "pe": 32.050182,
+            "price": 268.42,
+            "mktCap": 2886656327680,
+            "pe": 32.069298,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -544,9 +544,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 99.62,
-            "mktCap": 500690124800,
-            "pe": 67.28808,
+            "price": 99.61,
+            "mktCap": 500639858688,
+            "pe": 66.782875,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1279,9 +1279,9 @@
             "無線通訊解決方案"
         ],
         "market_data": {
-            "price": 177.01,
-            "mktCap": 186568540160,
-            "pe": 19.053822,
+            "price": 177.035,
+            "mktCap": 186594902016,
+            "pe": 19.056513,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1480,9 +1480,9 @@
             "NVIDIA Corp."
         ],
         "market_data": {
-            "price": 674.15,
+            "price": 674.18,
             "mktCap": null,
-            "pe": 35.615643,
+            "pe": 35.617226,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
