@@ -1003,7 +1003,7 @@
         "market_data": {
             "price": 936.48,
             "mktCap": 276268548096,
-            "pe": 17.114035,
+            "pe": 17.095291,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1373,9 +1373,9 @@
             "price": 45.88,
             "mktCap": 3659338496,
             "pe": 16.563177,
-            "rating": "A+",
-            "rating_score": 5,
-            "rating_recommendation": "Strong Buy"
+            "rating": "A",
+            "rating_score": 4,
+            "rating_recommendation": "Buy"
         }
     },
     "BAC": {
