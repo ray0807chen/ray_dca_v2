@@ -25,9 +25,9 @@
             "Apple TV+"
         ],
         "market_data": {
-            "price": 293.32,
-            "mktCap": 4308095467520,
-            "pe": 35.467957,
+            "price": 293.257,
+            "mktCap": 4307169837056,
+            "pe": 35.460335,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -56,9 +56,9 @@
             "GitHub"
         ],
         "market_data": {
-            "price": 415.12,
-            "mktCap": 3083691884544,
-            "pe": 24.753725,
+            "price": 415.06,
+            "mktCap": 3083246239744,
+            "pe": 24.750149,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -87,9 +87,9 @@
             "Google Maps"
         ],
         "market_data": {
-            "price": 400.8,
-            "mktCap": 4855869472768,
-            "pe": 30.572083,
+            "price": 400.713,
+            "mktCap": 4854816178176,
+            "pe": 30.565449,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -180,9 +180,9 @@
             "GeForce NOW"
         ],
         "market_data": {
-            "price": 215.2,
-            "mktCap": 5230436024320,
-            "pe": 43.828922,
+            "price": 215.217,
+            "mktCap": 5230849163264,
+            "pe": 43.832382,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -515,9 +515,9 @@
             "DVD Rental"
         ],
         "market_data": {
-            "price": 87.49,
-            "mktCap": 368402759680,
-            "pe": 28.22258,
+            "price": 87.477,
+            "mktCap": 368348004352,
+            "pe": 28.218388,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -544,9 +544,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 124.92,
-            "mktCap": 627847921664,
-            "pe": 81.60652,
+            "price": 124.895,
+            "mktCap": 627722223616,
+            "pe": 81.59019,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1480,9 +1480,9 @@
             "NVIDIA Corp."
         ],
         "market_data": {
-            "price": 711.23,
+            "price": 711.063,
             "mktCap": null,
-            "pe": 34.694794,
+            "pe": 34.68665,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
