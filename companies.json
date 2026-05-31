@@ -274,7 +274,7 @@
         "market_data": {
             "price": 326.36,
             "mktCap": 620653051904,
-            "pe": 28.453354,
+            "pe": 28.478184,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -397,7 +397,7 @@
         "market_data": {
             "price": 79.01,
             "mktCap": 339939131392,
-            "pe": 25.16242,
+            "pe": 24.845913,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -458,7 +458,7 @@
         "market_data": {
             "price": 317.14,
             "mktCap": 316225585152,
-            "pe": 22.28672,
+            "pe": 22.524149,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -727,7 +727,7 @@
         "market_data": {
             "price": 191.1,
             "mktCap": 156510912512,
-            "pe": 22.324766,
+            "pe": 22.118055,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1003,7 +1003,7 @@
         "market_data": {
             "price": 1025.56,
             "mktCap": 302547828736,
-            "pe": 18.745386,
+            "pe": 18.72827,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1125,7 +1125,7 @@
         "market_data": {
             "price": 182.46,
             "mktCap": 363386929152,
-            "pe": 31.622185,
+            "pe": 31.732176,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1156,7 +1156,7 @@
         "market_data": {
             "price": 259.21,
             "mktCap": 104772681728,
-            "pe": 15.09668,
+            "pe": 15.105477,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1312,7 +1312,7 @@
         "market_data": {
             "price": 956.32,
             "mktCap": 424273805312,
-            "pe": 49.6274,
+            "pe": 49.756504,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1342,7 +1342,7 @@
         "market_data": {
             "price": 224.16,
             "mktCap": 41619038208,
-            "pe": 22.268959,
+            "pe": 22.084469,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
