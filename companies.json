@@ -58,7 +58,7 @@
         "market_data": {
             "price": 372.97,
             "mktCap": 2770583420928,
-            "pe": 22.213816,
+            "pe": 22.227055,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -275,9 +275,9 @@
             "price": 336.23,
             "mktCap": 639423348736,
             "pe": 29.313862,
-            "rating": "N/A",
-            "rating_score": "-",
-            "rating_recommendation": "N/A"
+            "rating": "A+",
+            "rating_score": 5,
+            "rating_recommendation": "Strong Buy"
         }
     },
     "WMT": {
@@ -305,9 +305,9 @@
             "price": 115.69,
             "mktCap": 920670175232,
             "pe": 40.87986,
-            "rating": "A+",
-            "rating_score": 5,
-            "rating_recommendation": "Strong Buy"
+            "rating": "A",
+            "rating_score": 4,
+            "rating_recommendation": "Buy"
         }
     },
     "PG": {
