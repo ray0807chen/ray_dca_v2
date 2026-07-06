@@ -1480,9 +1480,9 @@
             "NVIDIA Corp."
         ],
         "market_data": {
-            "price": 712.6,
+            "price": 712.6044,
             "mktCap": null,
-            "pe": 32.71787,
+            "pe": 32.71807,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
