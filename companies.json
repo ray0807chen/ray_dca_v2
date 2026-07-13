@@ -546,7 +546,7 @@
         "market_data": {
             "price": 109.84,
             "mktCap": 552055799808,
-            "pe": 69.982285,
+            "pe": 69.754295,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -819,9 +819,9 @@
             "price": 44.37,
             "mktCap": 65706954752,
             "pe": 21.128572,
-            "rating": "N/A",
-            "rating_score": "-",
-            "rating_recommendation": "N/A"
+            "rating": "A",
+            "rating_score": 4,
+            "rating_recommendation": "Buy"
         }
     },
     "LLY": {
