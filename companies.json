@@ -25,9 +25,9 @@
             "Apple TV+"
         ],
         "market_data": {
-            "price": 310.03,
-            "mktCap": 4524633751552,
-            "pe": 35.59472,
+            "price": 316.83,
+            "mktCap": 4623874129920,
+            "pe": 36.375427,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -56,9 +56,9 @@
             "GitHub"
         ],
         "market_data": {
-            "price": 481.63,
-            "mktCap": 3576365580288,
-            "pe": 26.801893,
+            "price": 484.31,
+            "mktCap": 3596265979904,
+            "pe": 26.966038,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -87,9 +87,9 @@
             "Google Maps"
         ],
         "market_data": {
-            "price": 344.2,
-            "mktCap": 4209543741440,
-            "pe": 17.279118,
+            "price": 344.72,
+            "mktCap": 4215903354880,
+            "pe": 17.270542,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -118,9 +118,9 @@
             "Amazon Music"
         ],
         "market_data": {
-            "price": 259.45,
-            "mktCap": 2798509096960,
-            "pe": 20.856112,
+            "price": 265.84,
+            "mktCap": 2867433570304,
+            "pe": 20.882954,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -149,9 +149,9 @@
             "Workplace"
         ],
         "market_data": {
-            "price": 543.67,
-            "mktCap": 1385002696704,
-            "pe": 20.461798,
+            "price": 546.03,
+            "mktCap": 1391014838272,
+            "pe": 20.488932,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -180,9 +180,9 @@
             "GeForce NOW"
         ],
         "market_data": {
-            "price": 219.74,
-            "mktCap": 5322322739200,
-            "pe": 33.65084,
+            "price": 217.56,
+            "mktCap": 5269520646144,
+            "pe": 33.678017,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -212,9 +212,9 @@
             "Supercharger Network"
         ],
         "market_data": {
-            "price": 336.87,
-            "mktCap": 1330484084736,
-            "pe": 309.05502,
+            "price": 351.12,
+            "mktCap": 1386765090816,
+            "pe": 325.11108,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -242,9 +242,9 @@
             "Treasury Services"
         ],
         "market_data": {
-            "price": 363.25,
-            "mktCap": 965586124800,
-            "pe": 15.556745,
+            "price": 357.26,
+            "mktCap": 949663629312,
+            "pe": 15.553331,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -272,9 +272,9 @@
             "Visa Token Service"
         ],
         "market_data": {
-            "price": 364.25,
-            "mktCap": 680071987200,
-            "pe": 31.052856,
+            "price": 365.54,
+            "mktCap": 682480500736,
+            "pe": 30.951735,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -302,9 +302,9 @@
             "Walmart Pay"
         ],
         "market_data": {
-            "price": 115.2,
-            "mktCap": 916770652160,
-            "pe": 40.56338,
+            "price": 114.3,
+            "mktCap": 909608419328,
+            "pe": 40.531918,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -333,9 +333,9 @@
             "Home Care"
         ],
         "market_data": {
-            "price": 143.45,
-            "mktCap": 333439926272,
-            "pe": 21.6365,
+            "price": 144.38,
+            "mktCap": 335601664000,
+            "pe": 21.67868,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -364,9 +364,9 @@
             "Consumer Healthcare"
         ],
         "market_data": {
-            "price": 271.11,
-            "mktCap": 653347520512,
-            "pe": 31.41483,
+            "price": 273.41,
+            "mktCap": 658890358784,
+            "pe": 31.718098,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -395,9 +395,9 @@
             "Distribution"
         ],
         "market_data": {
-            "price": 88.82,
-            "mktCap": 382152409088,
-            "pe": 26.672672,
+            "price": 90.35,
+            "mktCap": 388735303680,
+            "pe": 27.132132,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -426,9 +426,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 27.25,
-            "mktCap": 155316109312,
-            "pe": 35.855263,
+            "price": 28.24,
+            "mktCap": 160958775296,
+            "pe": 35.746834,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -456,9 +456,9 @@
             "Pro Services"
         ],
         "market_data": {
-            "price": 337.49,
+            "price": 344.3,
             "mktCap": null,
-            "pe": 23.952448,
+            "pe": 24.110643,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -486,9 +486,9 @@
             "Streaming"
         ],
         "market_data": {
-            "price": 103.95,
-            "mktCap": 179489095680,
-            "pe": 21.43299,
+            "price": 106.93,
+            "mktCap": 184634621952,
+            "pe": 22.047422,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -515,9 +515,9 @@
             "DVD Rental"
         ],
         "market_data": {
-            "price": 77.77,
-            "mktCap": 323829563392,
-            "pe": 24.455973,
+            "price": 80.22,
+            "mktCap": 334031224832,
+            "pe": 24.457317,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -544,9 +544,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 96.685,
-            "mktCap": 511087050752,
-            "pe": 47.39159,
+            "price": 92.8,
+            "mktCap": 490550558720,
+            "pe": 45.4873,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -574,9 +574,9 @@
             "Cloud Services"
         ],
         "market_data": {
-            "price": 111.61,
-            "mktCap": 439903518720,
-            "pe": 33.516518,
+            "price": 110.55,
+            "mktCap": 435725598720,
+            "pe": 33.601826,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -605,9 +605,9 @@
             "Food"
         ],
         "market_data": {
-            "price": 140.13,
-            "mktCap": 191417581568,
-            "pe": 18.365662,
+            "price": 142.58,
+            "mktCap": 194764275712,
+            "pe": 18.37371,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -634,9 +634,9 @@
             "Information and Technology-Enabled Services"
         ],
         "market_data": {
-            "price": 393.93,
-            "mktCap": 353589526528,
-            "pe": 25.333118,
+            "price": 388.61,
+            "mktCap": 348814311424,
+            "pe": 25.31661,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -666,9 +666,9 @@
             "Marketing"
         ],
         "market_data": {
-            "price": 165.56,
-            "mktCap": 680768110592,
-            "pe": 21.307592,
+            "price": 164.77,
+            "mktCap": 677519753216,
+            "pe": 21.233248,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -695,9 +695,9 @@
             "Cyber and Intelligence Solutions"
         ],
         "market_data": {
-            "price": 574.31,
-            "mktCap": 503101259776,
-            "pe": 31.625,
+            "price": 573.72,
+            "mktCap": 502584377344,
+            "pe": 31.540403,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -725,9 +725,9 @@
             "Cloud Computing"
         ],
         "market_data": {
-            "price": 196.14,
+            "price": 206.09,
             "mktCap": null,
-            "pe": 22.727694,
+            "pe": 23.880648,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -754,9 +754,9 @@
             "Mobile Payments"
         ],
         "market_data": {
-            "price": 60.43,
-            "mktCap": 51695501312,
-            "pe": 11.423441,
+            "price": 61.25,
+            "mktCap": 52396978176,
+            "pe": 11.427238,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -785,9 +785,9 @@
             "Research"
         ],
         "market_data": {
-            "price": 258.92,
-            "mktCap": 457542041600,
-            "pe": 73.34845,
+            "price": 265.97,
+            "mktCap": 470000205824,
+            "pe": 74.92113,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -816,9 +816,9 @@
             "eCommerce"
         ],
         "market_data": {
-            "price": 40.06,
-            "mktCap": 59428962304,
-            "pe": 19.076193,
+            "price": 41.05,
+            "mktCap": 60897624064,
+            "pe": 19.547619,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -847,9 +847,9 @@
             "Biotechnology"
         ],
         "market_data": {
-            "price": 1225.73,
-            "mktCap": 1093034115072,
-            "pe": 41.104294,
+            "price": 1280.34,
+            "mktCap": 1141732147200,
+            "pe": 41.155254,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -878,9 +878,9 @@
             "Animal Health"
         ],
         "market_data": {
-            "price": 135.17,
-            "mktCap": 333487570944,
-            "pe": 108.136,
+            "price": 152.2,
+            "mktCap": 375503519744,
+            "pe": 122.741936,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -909,9 +909,9 @@
             "Delivery"
         ],
         "market_data": {
-            "price": 266.99,
-            "mktCap": 188933210112,
-            "pe": 21.671267,
+            "price": 267.45,
+            "mktCap": 189258743808,
+            "pe": 21.726238,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -940,9 +940,9 @@
             "Technology"
         ],
         "market_data": {
-            "price": 24.9,
-            "mktCap": 170624401408,
-            "pe": 8.217822,
+            "price": 25.12,
+            "mktCap": 172131942400,
+            "pe": 8.20915,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -971,9 +971,9 @@
             "Technology"
         ],
         "market_data": {
-            "price": 48.54,
-            "mktCap": 201672802304,
-            "pe": 12.640626,
+            "price": 49.36,
+            "mktCap": 205079707648,
+            "pe": 12.65641,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1001,9 +1001,9 @@
             "Underwriting"
         ],
         "market_data": {
-            "price": 1040.47,
-            "mktCap": 302955102208,
-            "pe": 16.066553,
+            "price": 1021.65,
+            "mktCap": 297475244032,
+            "pe": 16.076319,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1030,9 +1030,9 @@
             "Aerospace Services"
         ],
         "market_data": {
-            "price": 223.06,
-            "mktCap": 176299933696,
-            "pe": 80.23741,
+            "price": 222.2,
+            "mktCap": 175620227072,
+            "pe": 79.64158,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1060,9 +1060,9 @@
             "Financial Services"
         ],
         "market_data": {
-            "price": 840.87,
-            "mktCap": 386526806016,
-            "pe": 36.260025,
+            "price": 816.15,
+            "mktCap": 375163650048,
+            "pe": 36.225033,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1091,9 +1091,9 @@
             "Software"
         ],
         "market_data": {
-            "price": 227.71,
-            "mktCap": 72170405888,
-            "pe": 8.751346,
+            "price": 221.73,
+            "mktCap": 70275104768,
+            "pe": 8.757109,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1123,9 +1123,9 @@
             "Marketing"
         ],
         "market_data": {
-            "price": 205.74,
-            "mktCap": 403580289024,
-            "pe": 19.782694,
+            "price": 205.76,
+            "mktCap": 403619479552,
+            "pe": 19.803656,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1154,9 +1154,9 @@
             "Experience Cloud"
         ],
         "market_data": {
-            "price": 263.14,
-            "mktCap": 104598159360,
-            "pe": 15.053777,
+            "price": 272.47,
+            "mktCap": 108306825216,
+            "pe": 15.061913,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1185,9 +1185,9 @@
             "Education Services"
         ],
         "market_data": {
-            "price": 92.52,
-            "mktCap": 36756496384,
-            "pe": 1.8694685,
+            "price": 104.25,
+            "mktCap": 41416613888,
+            "pe": 2.106486,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -1218,9 +1218,9 @@
             "Custom Silicon"
         ],
         "market_data": {
-            "price": 484.39,
-            "mktCap": 790754623488,
-            "pe": 124.20257,
+            "price": 466.42,
+            "mktCap": 761419005952,
+            "pe": 123.39154,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -1249,9 +1249,9 @@
             "物流運輸"
         ],
         "market_data": {
-            "price": 74.66,
-            "mktCap": 152497553408,
-            "pe": 16.372808,
+            "price": 78.04,
+            "mktCap": 159401394176,
+            "pe": 17.114035,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1279,9 +1279,9 @@
             "無線通訊解決方案"
         ],
         "market_data": {
-            "price": 160.19,
-            "mktCap": 168236974080,
-            "pe": 18.28653,
+            "price": 161.91,
+            "mktCap": 170043375616,
+            "pe": 18.504,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -1310,9 +1310,9 @@
             "藥局與光學服務"
         ],
         "market_data": {
-            "price": 961.35,
-            "mktCap": 426338353152,
-            "pe": 48.479576,
+            "price": 956.99,
+            "mktCap": 424404779008,
+            "pe": 48.30843,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1340,9 +1340,9 @@
             "遊戲內微交易服務"
         ],
         "market_data": {
-            "price": 242.4,
-            "mktCap": 45324058624,
-            "pe": 23.531559,
+            "price": 237.04,
+            "mktCap": 44321845248,
+            "pe": 23.011225,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -1370,9 +1370,9 @@
             "線上健身課程"
         ],
         "market_data": {
-            "price": 53.36,
-            "mktCap": 4047314688,
-            "pe": 18.14966,
+            "price": 53.95,
+            "mktCap": 4092065792,
+            "pe": 18.164984,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1401,9 +1401,9 @@
             "企業銀行服務"
         ],
         "market_data": {
-            "price": 64.23,
-            "mktCap": 449144258560,
-            "pe": 14.833719,
+            "price": 63.17,
+            "mktCap": 441731907584,
+            "pe": 14.588914,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -1440,9 +1440,9 @@
             "Amazon.com Inc."
         ],
         "market_data": {
-            "price": 767.45,
+            "price": 769.06,
             "mktCap": null,
-            "pe": 25.853136,
+            "pe": 25.907373,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1480,9 +1480,9 @@
             "NVIDIA Corp."
         ],
         "market_data": {
-            "price": 717.51,
+            "price": 716.08,
             "mktCap": null,
-            "pe": 30.680885,
+            "pe": 30.619738,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1519,9 +1519,9 @@
             "Amazon.com Inc."
         ],
         "market_data": {
-            "price": 379.04,
+            "price": 379.99,
             "mktCap": null,
-            "pe": null,
+            "pe": 25.49811,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1558,9 +1558,9 @@
             "Amazon.com Inc."
         ],
         "market_data": {
-            "price": 705.4,
+            "price": 706.91,
             "mktCap": null,
-            "pe": 25.850693,
+            "pe": 25.906027,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1597,9 +1597,9 @@
             "Microsoft Corp."
         ],
         "market_data": {
-            "price": 532.91,
+            "price": 534.27,
             "mktCap": null,
-            "pe": 22.13435,
+            "pe": 22.190838,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1636,9 +1636,9 @@
             "Roku Inc."
         ],
         "market_data": {
-            "price": 79.15,
+            "price": 83.31,
             "mktCap": null,
-            "pe": 51.08495,
+            "pe": 53.76989,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1675,9 +1675,9 @@
             "Bank of America Corp."
         ],
         "market_data": {
-            "price": 57.84,
+            "price": 57.48,
             "mktCap": null,
-            "pe": 16.927122,
+            "pe": 16.821766,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1714,9 +1714,9 @@
             "Eli Lilly and Co."
         ],
         "market_data": {
-            "price": 169.73,
+            "price": 175.68,
             "mktCap": null,
-            "pe": 30.250887,
+            "pe": 31.311352,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1753,9 +1753,9 @@
             "ConocoPhillips"
         ],
         "market_data": {
-            "price": 63.68,
+            "price": 63.58,
             "mktCap": null,
-            "pe": 21.465652,
+            "pe": 21.431946,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1792,9 +1792,9 @@
             "ACM Research, Inc."
         ],
         "market_data": {
-            "price": 300.23,
+            "price": 301.72,
             "mktCap": null,
-            "pe": 18.61448,
+            "pe": 18.70686,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
@@ -1831,9 +1831,9 @@
             "Alibaba Group Holding Ltd"
         ],
         "market_data": {
-            "price": 59.64,
+            "price": 60.04,
             "mktCap": null,
-            "pe": 16.761658,
+            "pe": 16.866768,
             "rating": "N/A",
             "rating_score": "-",
             "rating_recommendation": "N/A"
