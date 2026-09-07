@@ -245,9 +245,9 @@
             "price": 358.64,
             "mktCap": 953331941376,
             "pe": 15.359315,
-            "rating": "A",
-            "rating_score": 4,
-            "rating_recommendation": "Buy"
+            "rating": "N/A",
+            "rating_score": "-",
+            "rating_recommendation": "N/A"
         }
     },
     "V": {
@@ -1282,9 +1282,9 @@
             "price": 168.74,
             "mktCap": 180224524288,
             "pe": 19.262558,
-            "rating": "N/A",
-            "rating_score": "-",
-            "rating_recommendation": "N/A"
+            "rating": "B",
+            "rating_score": 3,
+            "rating_recommendation": "Hold"
         }
     },
     "COST": {
