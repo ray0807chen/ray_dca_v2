@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAY DCA — 美股定期定額回測</title>
+  <meta name="description" content="簡單易用的美股定期定額回測工具，分析美股與ETF的歷史投資報酬率，助你做出更聰明的投資決策。">
+  <script>
+    var ua = navigator.userAgent;
+    if ((ua.indexOf('Line') > -1 || ua.indexOf('LINE') > -1) && window.location.href.indexOf('openExternalBrowser=1') < 0) {
+      var sep = window.location.href.indexOf('?') > -1 ? '&' : '?';
+      window.location.href = window.location.href + sep + 'openExternalBrowser=1';
+    }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css?v=6">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Highcharts -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Top progress bar -->
+  <div id="topProgress"></div>
+
+  <!-- Toast container -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- ── 輕量化全站共用手機選單 ── -->
+  <nav id="simpleMobileNav" class="simple-mobile-nav">
+    <div class="smn-overlay" id="smnOverlay"></div>
+    <div class="smn-menu" id="smnMenu">
+      <div class="smn-header">
+        <span class="smn-title">Menu</span>
+        <button class="smn-close" id="smnClose" aria-label="關閉">&times;</button>
+      </div>
+      <ul class="smn-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我</a></li>
+        <li><a href="pk.html">績效 PK</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand-logo" href="index.html">RAY DCA</a>
+
+      <!-- Desktop nav links -->
+      <ul class="navbar-nav ms-auto desktop-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">首頁</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">關於我</a></li>
+        <li class="nav-item"><a class="nav-link" href="pk.html">績效 PK</a></li>
+      </ul>
+
+      <!-- Hamburger trigger -->
+      <a href="#simpleMobileNav" class="hamburger-trigger" id="hamburgerTrigger" aria-label="選單">
+        <span></span><span></span><span></span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════ MAIN PAGE ═══════ -->
+  <div id="mainPage">
+    <div class="container">
+      <header>
+        <div class="hero-eyebrow" id="heroEyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+            <polyline points="17 6 23 6 23 12" />
+          </svg>
+          美股定期定額回測工具
+        </div>
+
+        <h1 id="heroTitle">DCA美股定期定額回測<br>高中生做的！</h1>
+
+        <p class="description" id="heroDesc">
+          超過 50 支美股與 ETF，每日自動更新報價。<br>
+          自訂期間、金額、投資日，秒算歷史年化報酬。
+        </p>
+
+        <!-- ── Feature cards ── -->
+        <ul class="features-list" id="featuresList">
+          <li>
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <strong>單股定期定額回測</strong>
+            <p>自訂起始日期、每月金額與投資日，即時輸出年化報酬、總損益與績效走勢圖。</p>
+            <button class="feature-cta-btn" onclick="scrollToSearch()">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+              立即試算
+            </button>
+          </li>
+          <li>
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8">
+                <path d="M12 2v20M2 12h20" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
+            <strong>50+ 美股，每日更新</strong>
+            <p>涵蓋科技、金融、能源等主流產業，透過 Yahoo Finance 每日自動拉取最新收盤價。</p>
+            <a class="feature-cta-btn" href="about.html#contact-form">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 5v14M5 12l7 7 7-7" />
+              </svg>
+              許願新增
+            </a>
+          </li>
+          <li>
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.8">
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+              </svg>
+            </div>
+            <strong>股票績效 PK</strong>
+            <p>選兩支股票，以 All-in 或 DCA 模式對決 1 到 20 年報酬，圖表直視誰遠甩誰。</p>
+            <a class="feature-cta-btn" href="pk.html">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+              開始對決
+            </a>
+          </li>
+        </ul>
+
+      </header>
+
+      <!-- Search — with top margin to breathe -->
+      <div class="search-box" id="searchBoxWrap">
+        <div class="search-box-inner">
+          <span class="search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+          </span>
+          <input type="text" id="searchInput" placeholder="搜尋股票代號、名稱或產業…" autocomplete="off" aria-label="搜尋股票">
+          <span class="search-count" id="searchCount"></span>
+        </div>
+        <p id="dataUpdateNote" class="data-update-note"></p>
+      </div>
+
+      <!-- Stock Grid -->
+      <div id="stockGrid" class="stock-grid" aria-label="股票列表">
+        <!-- Skeletons shown until data loads -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ BACKTEST PAGE — HORIZONTAL LAYOUT ═══════ -->
+  <div id="backtestPage">
+    <div class="container">
+      <div class="backtest-header">
+        <button class="back-button" onclick="showMainPage()" id="backBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+          返回
+        </button>
+        <div>
+          <img id="selectedStockIcon" src="" alt="Stock Icon">
+          <h2 id="selectedStockName"></h2>
+        </div>
+      </div>
+
+      <!-- Company info + params SIDE BY SIDE — stretch height -->
+      <div class="backtest-top-row">
+        <!-- Left: Company info panel (stretches to match form height) -->
+        <div id="selectedStockDescription" class="company-info company-info-panel"></div>
+
+        <!-- Right: Params panel -->
+        <div class="backtest-params">
+          <div class="param-section-title">投資期間</div>
+          <div class="date-pair">
+            <div class="param-group">
+              <label>開始日期</label>
+              <input type="date" id="startDate">
+            </div>
+            <div class="param-group">
+              <label>結束日期</label>
+              <input type="date" id="endDate">
+            </div>
+          </div>
+
+          <div class="param-section-title">投資設定</div>
+          <div class="param-group">
+            <label>每月投資金額（美元）</label>
+            <input type="number" id="monthlyInvestment" value="1000" min="100" step="100">
+          </div>
+
+          <div class="param-group">
+            <label>每月投資日（可複選）</label>
+            <div class="investment-days">
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="1"> 1日</label>
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="5"> 5日</label>
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="10"> 10日</label>
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="15"> 15日</label>
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="20"> 20日</label>
+              <label class="checkbox-label"><input type="checkbox" name="investmentDay" value="25"> 25日</label>
+            </div>
+          </div>
+
+          <div class="param-group">
+            <label>假日處理方式</label>
+            <select id="holidayHandling">
+              <option value="skip">跳過</option>
+              <option value="next">順延至下一交易日</option>
+            </select>
+          </div>
+
+          <div class="param-group">
+            <label>手續費率（%）</label>
+            <input type="number" id="feeRate" value="0.1" step="0.1" min="0" max="3">
+          </div>
+
+          <button id="calculateBtn" class="calculate-button">
+            <span class="btn-shimmer"></span>
+            開始回測
+          </button>
+        </div>
+      </div>
+
+      <!-- Results — full width below -->
+      <div id="resultsSection" class="hidden" style="margin-top:1.5rem;">
+        <div class="results-grid">
+          <div class="result-item">
+            <label>總投資金額</label>
+            <span id="totalInvestment">$0</span>
+          </div>
+          <div class="result-item">
+            <label>目前價值</label>
+            <span id="currentValue">$0</span>
+          </div>
+          <div class="result-item">
+            <label>總損益</label>
+            <span id="totalProfitLoss">$0</span>
+          </div>
+          <div class="result-item">
+            <label>總報酬率</label>
+            <span id="totalReturn">0%</span>
+          </div>
+          <div class="result-item">
+            <label>年化報酬率</label>
+            <span id="annualReturn">0%</span>
+          </div>
+          <div class="result-item">
+            <label>最大回撤</label>
+            <span id="maxDrawdown">0%</span>
+          </div>
+          <div class="result-item">
+            <label>總手續費</label>
+            <span id="totalFees">$0</span>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="performanceChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p>© 2026 RAY 投資回測 &nbsp;|&nbsp; <a href="about.html">關於我</a> &nbsp;|&nbsp; <a href="disclaimer.html"
+              target="_blank">免責聲明</a></p>
+          <p style="margin-top:.3rem;">完全免費開源的投資回測工具</p>
+        </div>
+        <a href="about.html#contact-form" class="footer-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          聯絡與建議
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=6"></script>
+  <script>
+    // ── Navbar scroll effect ──
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    <!-- Simple Mobile Nav logic is now in script.js -->
+    // ── Scroll to search ──
+    function scrollToSearch() {
+      const el = document.getElementById('searchInput');
+      if (!el) return;
+      const navH = document.querySelector('.navbar')?.offsetHeight || 56;
+      const top = el.getBoundingClientRect().top + window.scrollY - navH - 24;
+      window.scrollTo({ top, behavior: 'smooth' });
+      setTimeout(() => { el.focus(); }, 600);
+    }
+
+    // ── GSAP Hero animations ──
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const tl = gsap.timeline({ delay: .15 });
+      tl.to('#heroEyebrow', { opacity: 1, y: 0, duration: .7, ease: 'power3.out' })
+        .to('#heroTitle', { opacity: 1, y: 0, duration: .8, ease: 'power3.out' }, '-=.4')
+        .to('#heroDesc', { opacity: 1, y: 0, duration: .7, ease: 'power3.out' }, '-=.4')
+        .to('#featuresList', { opacity: 1, duration: .5 }, '-=.3');
+
+      // Stagger feature cards
+      gsap.from('#featuresList li', {
+        scrollTrigger: { trigger: '#featuresList', start: 'top 85%' },
+        y: 40, opacity: 0, duration: .7, stagger: .12, ease: 'power3.out',
+        delay: .2
+      });
+
+      // Motto section entrance
+      gsap.from('#mottoSection .motto-card', {
+        scrollTrigger: { trigger: '#mottoSection', start: 'top 88%' },
+        y: 30, opacity: 0, duration: .7, stagger: .15, ease: 'power3.out'
+      });
+
+      // Search box entrance
+      gsap.from('#searchBoxWrap', {
+        scrollTrigger: { trigger: '#searchBoxWrap', start: 'top 90%' },
+        y: 20, opacity: 0, duration: .6, ease: 'power3.out'
+      });
+    });
+  </script>
+
+</body>
+
+</html>
