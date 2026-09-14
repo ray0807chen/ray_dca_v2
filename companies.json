@@ -303,7 +303,7 @@
         ],
         "market_data": {
             "price": 107.15,
-            "mktCap": 852708163584,
+            "mktCap": 850100944896,
             "pe": 38.822464,
             "rating": "A",
             "rating_score": 4,
@@ -334,7 +334,7 @@
         ],
         "market_data": {
             "price": 145.27,
-            "mktCap": 337414619136,
+            "mktCap": 337670406144,
             "pe": 21.944109,
             "rating": "A",
             "rating_score": 4,
@@ -458,7 +458,7 @@
         "market_data": {
             "price": 308.74,
             "mktCap": 308026671104,
-            "pe": 21.605318,
+            "pe": 21.620447,
             "rating": "A",
             "rating_score": 4,
             "rating_recommendation": "Buy"
@@ -755,7 +755,7 @@
         ],
         "market_data": {
             "price": 53.72,
-            "mktCap": 45955358720,
+            "mktCap": 46306639872,
             "pe": 10.15501,
             "rating": "B",
             "rating_score": 3,
@@ -848,7 +848,7 @@
         ],
         "market_data": {
             "price": 1115.7,
-            "mktCap": 994915778560,
+            "mktCap": 994487042048,
             "pe": 37.452164,
             "rating": "A",
             "rating_score": 4,
@@ -1031,7 +1031,7 @@
         ],
         "market_data": {
             "price": 210.45,
-            "mktCap": 166333366272,
+            "mktCap": 166211829760,
             "pe": 75.70144,
             "rating": "A",
             "rating_score": 4,
