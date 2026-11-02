@@ -303,7 +303,7 @@
         ],
         "market_data": {
             "price": 123.51,
-            "mktCap": 982902374400,
+            "mktCap": 979897024512,
             "pe": 44.75,
             "rating": "A",
             "rating_score": 4,
@@ -546,7 +546,7 @@
         "market_data": {
             "price": 65.76,
             "mktCap": 349514399744,
-            "pe": 33.685246,
+            "pe": 36.301807,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
