@@ -273,7 +273,7 @@
         ],
         "market_data": {
             "price": 422.65,
-            "mktCap": 789935357952,
+            "mktCap": 788580401152,
             "pe": 34.306007,
             "rating": "A+",
             "rating_score": 5,
@@ -489,9 +489,9 @@
             "price": 116.75,
             "mktCap": 201590685696,
             "pe": 24.072165,
-            "rating": "A+",
-            "rating_score": 5,
-            "rating_recommendation": "Strong Buy"
+            "rating": "A",
+            "rating_score": 4,
+            "rating_recommendation": "Buy"
         }
     },
     "NFLX": {
@@ -546,7 +546,7 @@
         "market_data": {
             "price": 56.28,
             "mktCap": 299128193024,
-            "pe": 31.27379,
+            "pe": 31.433262,
             "rating": "B",
             "rating_score": 3,
             "rating_recommendation": "Hold"
@@ -910,7 +910,7 @@
         ],
         "market_data": {
             "price": 276.52,
-            "mktCap": 195677028352,
+            "mktCap": 195163602944,
             "pe": 21.876581,
             "rating": "A",
             "rating_score": 4,
@@ -1124,7 +1124,7 @@
         ],
         "market_data": {
             "price": 212.61,
-            "mktCap": 414802116608,
+            "mktCap": 414856019968,
             "pe": 15.610132,
             "rating": "A",
             "rating_score": 4,
@@ -1342,7 +1342,7 @@
         "market_data": {
             "price": 214.87,
             "mktCap": 40176488448,
-            "pe": 20.892382,
+            "pe": 21.057882,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
@@ -1371,7 +1371,7 @@
         ],
         "market_data": {
             "price": 60.31,
-            "mktCap": 4555401216,
+            "mktCap": 4497233408,
             "pe": 20.513605,
             "rating": "A",
             "rating_score": 4,
