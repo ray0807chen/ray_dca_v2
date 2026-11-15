@@ -150,7 +150,7 @@
         ],
         "market_data": {
             "price": 641.69,
-            "mktCap": 1640694153216,
+            "mktCap": 1640314437632,
             "pe": 21.893211,
             "rating": "A+",
             "rating_score": 5,
@@ -575,7 +575,7 @@
         ],
         "market_data": {
             "price": 95.64,
-            "mktCap": 377069010944,
+            "mktCap": 376532795392,
             "pe": 25.43617,
             "rating": "A",
             "rating_score": 4,
@@ -1342,7 +1342,7 @@
         "market_data": {
             "price": 227.82,
             "mktCap": 42650976256,
-            "pe": 22.394663,
+            "pe": 22.580133,
             "rating": "A+",
             "rating_score": 5,
             "rating_recommendation": "Strong Buy"
